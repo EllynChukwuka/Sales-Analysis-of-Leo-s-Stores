@@ -1,0 +1,327 @@
+
+1. Outline
+This report provides an in-depth analysis of sales transactions from LEO'S STORES dataset. It covers data preprocessing, trends, correlations, and insights to support business decisions. 
+
+2. Introduction
+
+Objective of the Project
+This analysis aims to understand customer purchase behavior, sales trends, and shipping performance to optimize operations and improve profitability.
+
+Problem Being Addressed
+Identify high-performing products and regions.
+Analyze revenue trends and key drivers.
+Optimize shipping costs and payment methods.
+
+Key Datasets and Methodologies
+The dataset includes order details, customer information, product categories, revenue, and shipping details. Microsoft Excel techniques such as Pivot Tables, Charts, and Formulas are used for analysis.
+
+3. Story of Data
+Data Source
+The dataset is an internal sales record of LEO'S STORES, capturing orders from 2014.
+
+
+Data Collection Process
+Extracted from a sales management system, covering multiple variables such as customer details, product information, and payment methods.
+
+Data Structure
+Rows represent individual transactions.
+Columns include Order ID, Date, Customer Details, Product Category, Sales, Revenue, and Shipping Fees.
+Important Features and Their Significance
+
+Order Date: Helps in time-based analysis of sales trends.
+Salesperson: Identifies the performance of sales representatives.
+Product Name & Category: Determines top-selling products.
+Revenue & Shipping Fee: Measures profitability.
+
+Data Limitations or Biases
+Missing or inconsistent ZIP codes.
+No data beyond 2014.
+No clear distinction between online and offline transactions.
+
+4. Data Splitting and Preprocessing
+Data Cleaning
+Removed duplicate entries.
+Corrected column headers.
+Standardized date formats.
+
+Handling Missing Values
+ZIP codes contain placeholder values (99999), requiring further verification.
+Minor inconsistencies in product category names were corrected.
+
+Data Transformations
+Created additional fields for month-wise analysis.
+Derived total cost including shipping.
+
+Data Splitting
+Independent Variables: Order Date, Product Category, Customer Location.
+Dependent Variable: Revenue.
+
+5. Pre-Analysis
+Identify Key Trends
+Higher sales during certain months suggest seasonal trends.
+Certain states contribute significantly to total revenue.
+
+Potential Correlations
+Orders with higher unit prices tend to have lower quantities purchased.
+Shipping fee impacts overall profitability.
+Initial Insights
+Some product categories dominate sales, while others lag behind.
+
+
+6. In-Analysis
+Unconfirmed Insights
+Sales might be influenced by regional factors.
+Payment type may correlate with purchase value.
+
+Recommendations
+Focus marketing on high-performing products.
+Adjust pricing strategy based on regional demand.
+
+Analysis Techniques Used in Excel
+Pivot Tables for sales trends.
+SUMIFS and AVERAGEIFS formulas for aggregations.
+
+
+7. Post-Analysis and Insights
+Key Findings
+The top 5 products contribute to 60% of total revenue.
+Credit card transactions dominate payment methods.
+Comparison with Initial Findings
+Some unexpected seasonal peaks were identified.
+High shipping costs negatively affect profit margins.
+
+
+
+
+8. Data Visualizations & Charts
+
+
+
+Top 10 Customers: A bar chart ranks the top 10 customers by purchase amount, with Company D leading at $67,180.50. Company D generated the highest revenue, making it the most successful company in terms of sales.
+
+
+
+Sales Trend Report: A line chart illustrates monthly sales trends. The highest sales month was December ($66,642.78), while the lowest was February ($19,955.50).
+
+
+
+
+Transaction by Amount: A column chart displays the distribution of transaction amounts. The majority of transactions were below $1,000, with fewer large transactions.
+
+
+Top 5 Cities by Sales: A pie chart highlights the top-performing cities by revenue, with New York leading, followed by Portland, Miami, Memphis, and Chicago.
+
+Sales by Product: A bar chart shows sales revenue by product category, where Beverages ($110,577.11) performed the best, followed by Sauces ($69,000.00) and the last being Dried Fruits & Nuts.
+
+
+Top Salesperson: Nancy Freeher recorded the highest sales, indicating exceptional performance among sales representatives. Performance Analysis for Sales Reps: Nancy Freeher led the sales team with $104,242.34 in revenue, while Jan Kotas had the lowest.
+
+
+
+Top 6 Ship Cities: A bar chart displays shipping demand, with New York leading, followed by Portland and Miami.
+
+
+
+Sales by Region: 
+A pie chart breaks down sales revenue by region. North ($141,660.34) was the highest-performing, followed by West and South.
+Dashboard
+
+
+
+Key Insights:
+New York is the top-performing city for both sales and shipping.
+Beverages contribute the most to sales.
+Nancy Freeher is the top salesperson.
+December had the highest revenue.
+The North region performed the best in terms of sales.
+
+
+9. Recommendations and Observations
+OBSERVATIONS/INSIGHT
+
+1. Nancy Freehafer (North) - Top Performer
+Total Sales: $104,242.34
+Region: North
+Key Product Categories Sold: Beverages, Sauces, Dairy Products
+Top Customers: Company D, Company BB
+Sales Trend: Steady throughout the year, peak in December
+
+Insights:
+Nancy is the highest-performing salesperson and has a strong presence in the North region.
+She sells high-demand categories like Beverages and Sauces, which dominate overall sales.
+Company D and Company BB are her main customers, contributing significantly to her revenue.
+
+2. Anne Larsen (South)
+Total Sales: $93,848.33
+Region: South
+Key Product Categories Sold: Beverages, Sauces, Jams & Preserves
+Top Customers Served: Company H, Company A
+Sales Trend: High sales in Q1( January, February, March) and Q4(October, November, December ), dip in mid-year
+
+Insights:
+Anne is the second-highest performer, primarily selling Beverages & Jams.
+Her major customers Company H & Company A contribute significantly to sales in the South.
+Sales dip in Q2 ( April, May, June)and Q3(July, August, September), indicating a possible seasonal impact.
+
+3. Andrew Cencini (East)
+•Total Sales: $67,180.50
+•Region: East
+•Key Product Categories Sold: Beverages, Dairy Products, Pasta
+•Top Customers Served: Company F
+•Sales Trend: Strong start in Q1, steady decline in later months
+
+ Insights:
+•Andrew relies on a single major customer (Company F), which is a risk.
+•His product mix is narrower and heavily focused on beverages and dairy.
+•Sales decline after Q1( January, February, March), meaning customer engagement might be reducing.
+
+
+•4. Mariya Sergienko (West)
+•Total Sales: $41,684.88
+•Region: West
+•Key Product Categories Sold: Dried Fruits & Nuts, Jams, Condiments
+•Top Customers Served: Company Z, Company C
+•Sales Trend: Consistent but below other regions
+
+• Insights:
+•Mariya's revenue is moderate compared to other sales reps.
+•She focuses on niche categories like Dried Fruits & Nuts, which have lower demand.
+•Company Z & Company C are her main customers, limiting customer diversification.
+
+5. Laura Giussani (East)
+Total Sales: $41,095.01
+Region: East
+Key Product Categories Sold: Baked Goods, Candy, Oil
+Top Customers Served: Company K, Company J
+Sales Trend: High in Q4, low in mid-year
+
+Insights:
+Laura sells lower-demand categories like Baked Goods & Candy, impacting sales.
+Her customer base is small, making her revenue unstable.
+Strong Q4(October, November, December ) performance suggests a seasonal sales pattern.
+
+6. Michael Neipper (North)
+Total Sales: $37,418.00
+Region: North
+Key Product Categories Sold: Pasta, Soups, Condiments
+Top Customers Served: Company I
+Sales Trend: High at the start of the year, drops in Q2-Q3
+
+
+ Insights:
+Heavy reliance on one customer (Company I) is a significant risk.
+Sells lower-volume products, limiting revenue potential.
+Performance drops in mid-year months, requiring engagement efforts.
+
+7. Robert Zare (West)
+Total Sales: $32,530.60
+Region: West
+Key Product Categories Sold: Jams, Oils, Fruit & Veg
+Top Customers Served: Company A, Company J
+Sales Trend: Steady but lowest among reps
+
+
+ Insights:
+Robert's sales are low compared to other salespeople.
+His main products are in lower-demand categories.
+Relies on only two customers, making revenue unpredictable.
+
+8. Jan Kotas (West) - Lowest Performer
+Total Sales: $16,350.50
+Region: West
+Key Product Categories Sold: Grains, Fruit & Veg, Pasta
+Top Customers Served: Company K
+Sales Trend: Lowest sales across all reps, no seasonal impact
+
+ Insights:
+Jan is the lowest-performing salesperson, with very limited sales.
+Sells mainly in low-revenue product categories.
+Has only one main customer, making revenue highly volatile.
+
+9, Best Salesperson: Nancy Freehafer – Generated the highest total revenue of $104,242.34, making her the top performer.
+  Worst Salesperson: Jan Kotas – Recorded the lowest sales of $16,350.50, indicating a potential need for training or sales strategy review.
+
+10. Regional Performance:
+Top Performing Region: North – $141,660.34 in total revenue.
+ Lowest Performing Region: West – $91,251.98 in total revenue.
+
+11, Company D performed best for the year with a revenue of $67,180 in the top 5, and Company A - $36,839.99 worst in the top 5.
+
+12, Highest Revenue Cities/ship City:  New York – $67,180.50
+
+13, Sales Trend Report: Best Sales Month: December – $66,642.78.  Lowest Sales Month: February – $19,955.50
+
+14, Top Product Categories (By Revenue): Beverages – $110,577.1 was top selling product and Dried Fruit & Nuts – $27,999.50 was the lowest.
+
+
+
+RECOMMENDATIONS
+1, Strengthen customer loyalty programs to retain top clients. Expand product offerings in other regions to replicate success. Increase focus on off-peak months to maintain consistent sales. Recognize and give incentives to top performers like Nancy to maintain motivation. Provide additional sales training, coaching, or mentorship to underperforming salespeople
+.
+2, Introduce summer promotions to counteract mid-year dips. Increase focus on upselling beverages & sauces to existing customers. Explore expansion into other product categories to diversify revenue streams.
+
+3, Expand the customer base in the East region. Offer bundle promotions to increase order values per transaction. Engage in customer retention strategies to ensure repeat orders.
+
+4, Expand product categories to include high-performing items like Beverages. Acquire new customers to avoid dependency on a few accounts. Implement cross-selling strategies for better revenue growth.
+
+5, Focus on high-demand products like Beverages and Sauces. Expand the customer network in the East to stabilize revenue. Run mid-year promotions to even out sales performance.
+
+6, Expand the product mix to include higher-revenue categories. Acquire more customers in the North to balance sales sources. Introduce loyalty programs to retain Company I and increase order sizes.
+
+7. Expand into high-performing categories like Beverages & Sauces.
+Diversify customer base by prospecting new clients.
+Increase sales efforts in the West region, which lags behind others.
+
+8, Rework sales strategy to target high-demand products. Acquire new customers and expand the reach in the West region. Implement training programs to improve sales techniques.
+
+9, Recognize and give incentives to top performers like Nancy to maintain motivation. Provide additional sales training, coaching, or mentorship to underperforming salespeople.
+
+10, North leads in sales – Strengthen marketing & maintain successful strategies.
+West is lagging – Investigate potential reasons (e.g., fewer customers, lower demand, weaker salesperson performance) and implement targeted campaigns.
+
+11, Company D contributes the most revenue – Consider offering exclusive deals, discounts, or loyalty programs to retain them. Focus on high-value clients – Strengthen relationships with top customers through personalized service and incentives. Identify similar potential customers – Use the profile of top customers to target new high-value clients.
+
+12, New York leads sales – Consider further expanding in this market. Portland & Miami are strong markets – Focus on retaining & growing sales in these cities. Explore weaker markets – Identify cities where sales are low and strategize on potential growth.
+
+13, December had the highest sales – Likely due to holiday demand. Plan promotions and inventory accordingly for next year. June & October saw spikes in sales – Investigate possible seasonal trends or successful promotions during these months. February was the weakest month – Consider launching special offers or marketing campaigns during slow months to boost sales.
+
+14, Beverages dominate sales –  Prioritize stock and marketing for this category.
+Sauces & Jams are strong performers – Consider bundling these with other products to increase sales.
+Dairy Products & Dried Fruits still generate solid revenue – Monitor demand trends and adjust supply as needed.
+
+15. Diversify Customer Base: Reduce reliance on single high-value clients to stabilize revenue.
+
+16. Focus on High-Demand Products: Sales reps dealing with low-performing categories should shift to Beverages, Sauces, and Dairy.
+
+ 17. Improve Mid-Year Sales: Implement summer promotions and loyalty programs to balance revenue.
+
+ 18. Strengthen Underperforming Regions: The West region lags in sales; targeted marketing is needed.
+
+ 19. Upselling & Cross-Selling: Reps should offer bundles and volume discounts to increase order value.
+
+Unexpected Outcomes
+Some lower-cost items generate higher revenue due to high purchase frequency.
+Certain states exhibit lower sales despite high population density.
+
+10. Conclusion
+
+Key Learnings
+Revenue is concentrated in a few products and locations.
+Shipping fees significantly impact profitability.
+
+Limitations
+The dataset covers only one year, limiting trend analysis.
+Missing or default ZIP codes may distort location-based insights.
+
+Future Research
+Expand the dataset to include more years.
+Analyze customer loyalty and repeat purchases.
+
+11. References & Appendices
+References
+Internal sales data from LEO'S STORES.
+
+
+
+
+
